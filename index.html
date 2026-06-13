@@ -1,0 +1,11 @@
+  <!DOCTYPE html>
+  <html>
+  <body>
+    <h2>TikTok Auth Code</h2>
+    <p id="code" style="word-break:break-all;font-size:1.2em;background:#eee;padding:1em"></p>
+    <script>
+      const p = new URLSearchParams(location.search);
+      document.getElementById('code').textContent = p.get('code') || 'No code found';
+    </script>
+  </body>
+  </html>
